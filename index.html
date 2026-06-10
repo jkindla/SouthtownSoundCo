@@ -12,18 +12,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/png" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
       <a href="#top" class="brand" aria-label="Southtown Sound Co. home">
-        <span class="brand-mark">SS</span>
+        <img src="/images/SSC_Logo_1.png" alt="Southtown Sound Co. logo" class="brand-logo" />
         <span>Southtown Sound Co.</span>
       </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+      </label>
 
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#services">Services</a>
         <a href="#process">Process</a>
+        <a href="#gear">Equipment</a>
         <a href="#packages">Packages</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -34,7 +41,7 @@
     <section class="hero" aria-label="Southtown Sound Co. hero section">
       <div class="container hero-content">
         <p class="eyebrow">San Antonio Live Audio & Event Production</p>
-        <h1>Professional audio. Seamless events.</h1>
+        <h1>Professional Audio. Seamless Events.</h1>
         <p>
           Southtown Sound Co. provides reliable live sound and event production for weddings,
           corporate events, private parties, and live music across San Antonio and South Texas.
@@ -162,21 +169,58 @@
 
         <div class="process-list">
           <div class="process-step">
+            <span class="process-icon" aria-hidden="true">🤝</span>
             <h3>Tell us about the event</h3>
             <p>Share the date, venue, audience size, schedule, and what needs to be heard.</p>
           </div>
           <div class="process-step">
+            <span class="process-icon" aria-hidden="true">🔨</span>
             <h3>We recommend a setup</h3>
             <p>We match the right speakers, microphones, mixer, and support to your needs.</p>
           </div>
           <div class="process-step">
+            <span class="process-icon" aria-hidden="true">🎛</span>
             <h3>We handle production</h3>
             <p>We arrive prepared, set up cleanly, operate onsite, and adapt as the event moves.</p>
           </div>
           <div class="process-step">
+            <span class="process-icon" aria-hidden="true">🎉</span>
             <h3>You enjoy the event</h3>
             <p>After the final announcement or last song, we tear down and clear the space.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gear" id="gear">
+      <div class="container">
+        <p class="eyebrow">Our gear</p>
+        <h2 class="section-title">Professional audio equipment for every event.</h2>
+        <p class="section-copy">
+          We provide proven sound systems, versatile microphones, and stage-ready support so your event sounds polished and dependable from setup through teardown.
+        </p>
+
+        <div class="gear-grid">
+          <article class="gear-card">
+            <span class="gear-icon" aria-hidden="true">🔊</span>
+            <h3>Speakers & PA Systems</h3>
+            <p>We offer the highest quality speakers and PA systems from brands such as QSC and EV. We tailor our setups to your venue size and event needs, ensuring clear sound for every guest.</p>
+          </article>
+          <article class="gear-card">
+            <span class="gear-icon" aria-hidden="true">🎚</span>
+            <h3>Mixing & Monitoring</h3>
+            <p>We provide  industry standard digital mixers and monitoring solutions with real time support from our onsite engineers ensuring a seamless audio experience.</p>
+          </article>
+          <article class="gear-card">
+            <span class="gear-icon" aria-hidden="true">🎤</span>
+            <h3>Microphones & Wireless</h3>
+            <p>Wired and wireless handhelds, lavaliers, and instrument mics designed for clear speech and musical detail.</p>
+          </article>
+          <article class="gear-card">
+            <span class="gear-icon" aria-hidden="true">🔧</span>
+            <h3>Setup & Support</h3>
+            <p>Expert cable management, clean setup, professional lighting, and friendly support from start to finish for a clean and stress free event footprint.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -193,35 +237,51 @@
         <div class="packages-grid">
           <article class="package-card">
             <h3>Essential</h3>
-            <p class="best-for">Best for: speakers, ceremonies, small gatherings</p>
+            <p class="best-for">Best for: Speakers, Ceremonies, Small Gatherings</p>
             <ul>
               <li>Compact PA setup</li>
               <li>1–2 microphones</li>
               <li>Music playback support</li>
               <li>Delivery, setup, and teardown options</li>
             </ul>
+            <p class="starting-price">Starting at $400</p>
           </article>
 
           <article class="package-card featured">
             <h3>Event Standard</h3>
-            <p class="best-for">Best for: weddings, parties, corporate events</p>
+            <p class="best-for">Best for: Receptions, Live Bands, Corporate Events</p>
             <ul>
               <li>Full-range PA system</li>
               <li>Wireless microphone options</li>
-              <li>Basic mixing and onsite operation</li>
+              <li>Attentive mixing and onsite operation</li>
               <li>Setup for announcements, music, and performers</li>
             </ul>
+            <p class="starting-price">Starting at $800</p>
           </article>
 
           <article class="package-card">
-            <h3>Live Production</h3>
-            <p class="best-for">Best for: bands, venues, festivals</p>
+            <h3>Complete Production</h3>
+            <p class="best-for">Best for: Wide Footprint Weddings and Events, Festivals</p>
             <ul>
-              <li>PA with subwoofer support</li>
-              <li>Multi-input mixing</li>
-              <li>Monitor/IEM planning</li>
-              <li>Custom stage and production support</li>
+              <li>Full-range PA system</li>
+              <li>Satellite Setups (ceremony, cocktail hour, main event)</li>
+              <li>Intensive planning and coordination</li>
+              <li>Custom staging and production support</li>
             </ul>
+            <p class="starting-price">Starting at $1,500</p>
+          </article>
+
+          <article class="package-card add-ons-card">
+            <h3>Add Ons</h3>
+            <p class="best-for">Enhance any package</p>
+            <ul>
+              <li>Lighting & Ambient Effects</li>
+              <li>Video projector setup</li>
+              <li>MultitrackAudio Recording</li>
+              <li>Videography Services</li>
+              <li>Emcee Services</li>
+            </ul>
+            <p class="add-ons-note">Available for any package</p>
           </article>
         </div>
       </div>
@@ -237,7 +297,13 @@
               Send your event date, venue, estimated guest count, and audio needs. We’ll follow up with a practical recommendation.
             </p>
           </div>
-          <a class="btn btn-primary" href="mailto:hello@southtownsound.co?subject=Southtown%20Sound%20Co.%20Quote%20Request">Get a Custom Quote</a>
+          <div style="display: grid; gap: 1rem; align-items: center;">
+            <a class="btn btn-primary" href="mailto:southtownsoundco@gmail.com?subject=Southtown%20Sound%20Co.%20Quote%20Request">Get a Custom Quote</a>
+            <div class="contact-info">
+              <a class="contact-link" href="mailto:southtownsoundco@gmail.com">southtownsoundco@gmail.com</a>
+              <a class="contact-link" href="tel:+12102648787">210-264-8787</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -246,7 +312,14 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <p>© <span id="year"></span> Southtown Sound Co. Audio & Event Production.</p>
-      <p>San Antonio • South Texas</p>
+      <div>
+        <p>San Antonio • South Texas</p>
+        <p class="footer-contact">
+          <a class="contact-link" href="mailto:southtownsoundco@gmail.com">southtownsoundco@gmail.com</a>
+          <span aria-hidden="true"> • </span>
+          <a class="contact-link" href="tel:+12102648787">210-264-8787</a>
+        </p>
+      </div>
     </div>
   </footer>
 

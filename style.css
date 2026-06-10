@@ -633,7 +633,8 @@ a {
 	}
 
 	.services-grid,
-	.packages-grid {
+	.packages-grid,
+	.gear-grid {
 		grid-template-columns: 1fr 1fr;
 	}
 
@@ -657,6 +658,7 @@ a {
 
 	.services-grid,
 	.packages-grid,
+	.gear-grid,
 	.process-list,
 	.stats {
 		grid-template-columns: 1fr;
